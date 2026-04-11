@@ -1,1 +1,27 @@
-/* Aca iran los estilos */
+:root {
+    --background-color: #090909;
+    --color-fondo-carta: #0f0f0f;
+    --color-acento: #8f1117;
+    --color-acento-dark: #3b1117;
+    --color-texto: #d3d1c7;
+    --color-texto-mid:   #b4b2a9;
+    --color-texto-dim:   #5f5e5a;
+    --color-borde:       #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background-color);
+  color: var(--color-texto);
+}
+
+.site {
+  min-height: 100vh;
+  background: var(--background-color);
+}
