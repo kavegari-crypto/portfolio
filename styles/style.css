@@ -25,3 +25,456 @@ body {
   min-height: 100vh;
   background: var(--background-color);
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 0 2.5rem;
+  background: var(--background-color);
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;    /* quita los puntos de la lista */
+}
+
+nav ul li a {
+  font-size: 12px;
+  color: var(--color-texto-dim);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+
+nav ul li a:hover {
+  color: var(--color-texto);
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-texto);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+}
+
+/* HERO */
+#hero {
+  padding: 5rem 2.5rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+#hero p {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--color-acento);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#hero h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color-texto);
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+#hero h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-acento);
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+#hero p + p {
+  font-size: 13px;
+  color: var(--color-texto-dim);
+  line-height: 1.8;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* SOBRE MÍ */
+#about {
+  padding: 3.5rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+#about header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#about article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#about article p {
+  font-size: 13px;
+  color: var(--color-texto-dim);
+  line-height: 1.8;
+}
+
+/* HABILIDADES */
+#skills {
+  padding: 3.5rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+#skills header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#skills div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1px;
+  background: var(--color-borde);
+  border: 0.5px solid var(--color-borde);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#skills article {
+  background: var(--color-fondo-carta);
+  padding: 1.4rem;
+}
+
+#skills article h3 {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-acento);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+#skills article ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#skills article ul li {
+  font-size: 12px;
+  color: var(--color-texto-mid);
+  padding-left: 10px;
+  border-left: 1.5px solid var(--color-acento-dark);
+}
+
+/* EXPERIENCIA */
+#experience {
+  padding: 3.5rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+#experience header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#experience article {
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid var(--color-borde);
+  padding-left: 1.5rem;
+  border-left: 1.5px solid var(--color-acento-dark);
+  margin-bottom: 1.5rem;
+}
+
+#experience article:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+#experience article h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 4px;
+}
+
+#experience article p strong {
+  font-size: 11px;
+  color: var(--color-acento);
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+#experience article p {
+  font-size: 12px;
+  color: var(--color-texto-dim);
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+/* PROYECTOS */
+#projects {
+  padding: 3.5rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+#projects header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#projects div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--color-borde);
+  border: 0.5px solid var(--color-borde);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#projects article {
+  background: var(--color-fondo-carta);
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#projects article h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-texto);
+}
+
+#projects article p {
+  font-size: 12px;
+  color: var(--color-texto-dim);
+  line-height: 1.7;
+}
+
+#projects article p strong {
+  color: var(--color-acento);
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+#projects article div {
+  display: flex;
+  gap: 10px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  margin-top: 4px;
+}
+
+#projects article div a {
+  font-size: 11px;
+  color: var(--color-texto-dim);
+  text-decoration: none;
+  padding: 4px 12px;
+  border: 0.5px solid var(--color-acento-dark);
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+}
+
+#projects article div a:hover {
+  color: var(--color-texto);
+  border-color: var(--color-acento);
+}
+
+/* EDUCACIÓN */
+#education {
+  padding: 3.5rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 0.5px solid var(--color-borde);
+}
+
+#education header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 2rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#education article {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 0.5px solid var(--color-borde);
+  gap: 1rem;
+}
+
+#education article:last-child {
+  border-bottom: none;
+}
+
+#education article h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-texto);
+}
+
+#education article p {
+  font-size: 12px;
+  color: var(--color-acento);
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+/* CONTACTO */
+#contact {
+  padding: 3.5rem 2.5rem 5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#contact header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-texto);
+  margin-bottom: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#contact > p {
+  font-size: 13px;
+  color: var(--color-texto-dim);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+#contact ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+#contact ul li a {
+  font-size: 12px;
+  color: var(--color-texto-dim);
+  text-decoration: none;
+  padding: 6px 16px;
+  border: 0.5px solid var(--color-acento-dark);
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+}
+
+#contact ul li a:hover {
+  color: var(--color-texto);
+  border-color: var(--color-acento);
+}
+
+/* FORMULARIO */
+#contact form {
+  background: var(--color-fondo-carta);
+  border: 0.5px solid var(--color-borde);
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#contact form label {
+  font-size: 11px;
+  color: var(--color-texto-dim);
+  letter-spacing: 0.06em;
+}
+
+#contact form input,
+#contact form textarea {
+  background: var(--color-fondo-hover);
+  border: 0.5px solid var(--color-borde);
+  border-radius: 3px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: var(--color-texto-mid);
+  font-family: inherit;
+  outline: none;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  border-color: var(--color-acento-dark);
+}
+
+#contact form textarea {
+  height: 100px;
+  resize: none;
+}
+
+#contact form button {
+  background: var(--color-acento);
+  color: var(--color-texto);
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+#contact form button:hover {
+  opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+  background: var(--color-fondo-carta);
+  border-top: 0.5px solid var(--color-borde);
+  padding: 1.5rem 2.5rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 11px;
+  color: var(--color-texto-dim);
+  letter-spacing: 0.06em;
+}
